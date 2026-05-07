@@ -1,0 +1,30 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --sidebar-bg: #1a1d2e;
+  --sidebar-hover: #252840;
+  --primary: #7c3aed;
+  --primary-light: #8b5cf6;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background: #f8f9fc;
+}
+
+/* Scrollbar styling */
+::-webkit-scrollbar { width: 6px; height: 6px; }
+::-webkit-scrollbar-track { background: #f1f1f1; }
+::-webkit-scrollbar-thumb { background: #c7c7c7; border-radius: 3px; }
+::-webkit-scrollbar-thumb:hover { background: #a8a8a8; }
+
+/* Input focus ring */
+input:focus, select:focus, textarea:focus {
+  outline: none;
+  ring-color: #7c3aed;
+}
