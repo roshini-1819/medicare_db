@@ -8,7 +8,7 @@ Full-stack application for managing doctor accounts — **Spring Boot backend + 
 
 ```
 medicare-doctors/
-├── backend/                    ← Spring Boot (Java 17)
+├── backend/                    
 │   ├── pom.xml
 │   └── src/main/
 │       ├── java/com/medicare/
@@ -35,7 +35,7 @@ medicare-doctors/
 │       └── resources/
 │           └── application.properties
 │
-└── frontend/                   ← Next.js 14 (TypeScript)
+└── frontend/                   
     ├── package.json
     ├── next.config.js
     ├── tailwind.config.js
@@ -400,12 +400,12 @@ Open `http://localhost:3000`
 
 | Method | Endpoint | Auth | Description |
 |--------|----------|------|-------------|
-| POST | /api/auth/login | ❌ | Admin login, returns JWT |
-| GET | /api/doctors | ✅ | List all doctors |
-| POST | /api/doctors | ✅ | Create new doctor |
-| GET | /api/doctors/stats | ✅ | Dashboard statistics |
-| PATCH | /api/doctors/{id}/status | ✅ | Update doctor status |
-| DELETE | /api/doctors/{id} | ✅ | Delete doctor |
+| POST | /api/auth/login  | Admin login, returns JWT |
+| GET | /api/doctors  | List all doctors |
+| POST | /api/doctors | Create new doctor |
+| GET | /api/doctors/stats  | Dashboard statistics |
+| PATCH | /api/doctors/{id}/status  | Update doctor status |
+| DELETE | /api/doctors/{id} | Delete doctor |
 
 ---
 
